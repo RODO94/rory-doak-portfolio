@@ -1,0 +1,55 @@
+.header {
+  display: flex;
+  padding: 0rem 2.5rem 0rem 6rem;
+  align-items: center;
+  gap: 3rem;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  &-nav {
+    display: flex;
+    padding: 1.5rem 1rem 1.5rem 0rem;
+    align-items: center;
+    gap: 1.5rem;
+    &__link {
+      //   font-family: Roboto Flex;
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 2.5rem;
+    }
+  }
+  &__contact {
+    display: flex;
+    width: 12rem;
+    padding: 1.5rem 0rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    &-txt {
+      padding: 0.75rem;
+      color: #0f1938;
+      text-align: center;
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 2rem; /* 133.333% */
+      letter-spacing: 0.075rem;
+      border-radius: 0.75rem;
+      background: #e8fcb0;
+    }
+  }
+  &__icons {
+    display: flex;
+    width: 7.625rem;
+    height: 2.75rem;
+    align-items: center;
+    gap: 0.5rem;
+    flex-shrink: 0;
+  }
+  &__icon {
+    width: 3.375rem;
+    height: 2.9375rem;
+  }
+}

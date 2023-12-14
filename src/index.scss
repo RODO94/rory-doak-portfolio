@@ -1,0 +1,11 @@
+@use "./styles/partials/typography" as *;
+*,
+*::after,
+*::before {
+  box-sizing: content-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}

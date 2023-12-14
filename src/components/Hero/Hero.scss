@@ -1,0 +1,28 @@
+.hero {
+  display: flex;
+  padding: 0rem 6rem 3rem 6rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 60vh;
+  &__wrap {
+    display: flex;
+    padding-top: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    align-self: stretch;
+  }
+  &__title {
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.32rem;
+    color: #040e33;
+    &--emphasis {
+      color: #395fd3;
+    }
+  }
+}
