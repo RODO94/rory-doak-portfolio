@@ -4,17 +4,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  height: 75vh;
   &__wrap {
     display: flex;
     padding-top: 1rem;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 2rem;
+    gap: 4rem;
     align-self: stretch;
+    margin-bottom: 2rem;
   }
   &__title {
+    margin: 0;
     font-size: 5rem;
     font-style: normal;
     font-weight: 700;
@@ -23,6 +24,24 @@
     color: #040e33;
     &--emphasis {
       color: #395fd3;
+    }
+  }
+  &__border {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    background-color: white;
+  }
+  &__wave {
+    background-color: #395fd3;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    margin-top: 1.5rem;
+    &-top {
+      margin-top: 0rem;
+      margin-bottom: 1.5rem;
     }
   }
 }
