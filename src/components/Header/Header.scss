@@ -12,7 +12,6 @@
     align-items: center;
     gap: 1.5rem;
     &__link {
-      //   font-family: Roboto Flex;
       font-size: 1.25rem;
       font-style: normal;
       font-weight: 600;
@@ -42,14 +41,12 @@
   }
   &__icons {
     display: flex;
-    width: 7.625rem;
-    height: 2.75rem;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
     flex-shrink: 0;
   }
   &__icon {
-    width: 3.375rem;
-    height: 2.9375rem;
+    height: 48px;
   }
 }

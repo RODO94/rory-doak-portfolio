@@ -10,7 +10,7 @@ export default function Projects() {
           <div className="projects__tech-list">
             <div className="projects__sections">
               <div className="projects__subtitle-wrap">
-                <h3 className="projects__subtitle">Front-End</h3>
+                <h3 className="projects__subtitle">Frontend</h3>
               </div>
               <div className="projects__list">
                 <p className="projects__tech">HTML5</p>
@@ -22,7 +22,7 @@ export default function Projects() {
             </div>
             <div className="projects__sections">
               <div className="projects__subtitle-wrap">
-                <h3 className="projects__subtitle">Back-End</h3>
+                <h3 className="projects__subtitle">Backend</h3>
               </div>
               <div className="projects__list">
                 <p className="projects__tech">NodeJS</p>
