@@ -1,5 +1,6 @@
 import "./Projects.scss";
 import coinOne from "../../assets/coin-1.jpg";
+import coinVidOne from "../../assets/video/coin-vid-1.mp4";
 
 export default function Projects() {
   return (
@@ -61,10 +62,12 @@ export default function Projects() {
             </div>
           </div>
           <div className="projects__image-wrap">
-            <img
-              className="projects__img"
-              src={coinOne}
-              alt="dashboard of the coin app"
+            <video
+              className="projects__video"
+              src={coinVidOne}
+              autoPlay
+              muted
+              controls
             />
           </div>
         </div>
