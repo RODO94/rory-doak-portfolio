@@ -1,3 +1,23 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+@keyframes slowFadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
 .hero {
   display: flex;
   padding: 0rem 6rem 3rem 6rem;
@@ -10,7 +30,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 4rem;
     align-self: stretch;
     margin-bottom: 2rem;
   }
@@ -24,6 +43,16 @@
     color: #040e33;
     &--emphasis {
       color: #395fd3;
+    }
+    &--first {
+      animation: fadeIn 3s;
+    }
+    &--second {
+      animation-name: slowFadeIn;
+      animation-duration: 2s;
+    }
+    &--third {
+      animation: slowFadeIn 5s;
     }
   }
   &__border {
