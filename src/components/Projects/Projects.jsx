@@ -1,8 +1,25 @@
 import "./Projects.scss";
 import coinOne from "../../assets/coin-1.jpg";
-import coinVidOne from "../../assets/video/coin-vid-1.mp4";
+import CoinOne from "../CoinOne/CoinOne";
+import { useState } from "react";
+import CoinTwo from "../CoinTwo/CoinTwo";
 
 export default function Projects() {
+  const [projectCarousel, setProjectCarousel] = useState(1);
+
+  let carousel =
+    projectCarousel === 1 ? (
+      <CoinOne />
+    ) : projectCarousel === 2 ? (
+      <CoinTwo />
+    ) : (
+      <CoinOne />
+    );
+
+  setTimeout(() => {
+    setProjectCarousel(2);
+  }, 25000);
+
   return (
     <section className="projects">
       <article className="projects__technologies">
@@ -49,29 +66,7 @@ export default function Projects() {
           over the 12-week bootcamp.
         </p>
       </article>
-      <article className="projects__project">
-        <div className="projects__wrap">
-          <div className="projects__header">
-            <div className="projects__header-container">
-              <h2 className="projects__name">Coin</h2>
-            </div>
-            <div className="projects__header-container">
-              <p className="projects__description">
-                See how much money your connections have and how you compare...
-              </p>
-            </div>
-          </div>
-          <div className="projects__image-wrap">
-            <video
-              className="projects__video"
-              src={coinVidOne}
-              autoPlay
-              muted
-              controls
-            />
-          </div>
-        </div>
-      </article>
+      <article className="projects__project">{carousel}</article>
     </section>
   );
 }

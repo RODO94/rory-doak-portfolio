@@ -1,3 +1,14 @@
+@keyframes sideFade {
+  0% {
+    width: 100%;
+    opacity: 100;
+  }
+  100% {
+    width: 0%;
+    opacity: 0;
+  }
+}
+
 .projects {
   display: flex;
   padding: 0rem 6rem;
@@ -157,5 +168,10 @@
     width: 100%;
     height: 100%;
     border: none;
+    &--first {
+      animation-name: sideFade;
+      animation-duration: 1s;
+      animation-delay: 24s;
+    }
   }
 }
