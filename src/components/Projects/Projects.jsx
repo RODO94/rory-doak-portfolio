@@ -21,7 +21,7 @@ export default function Projects() {
   }, 25000);
 
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
       <article className="projects__technologies">
         <h2 className="projects__title">My Latest Work</h2>
         <div className="projects__tech-wrap">
