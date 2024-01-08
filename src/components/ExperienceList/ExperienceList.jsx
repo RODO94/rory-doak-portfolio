@@ -7,6 +7,8 @@ export default function ExperienceList() {
         <div className="experience__section">
           <h3 className="experience__subheader">Role</h3>
           <p className="experience__text">Project Manager</p>
+          <p className="experience__text">Stora Enso</p>
+          <p className="experience__text">2020 - 2023</p>
           <img src="" alt="" />
         </div>
         <div className="experience__section">
@@ -32,6 +34,8 @@ export default function ExperienceList() {
         <div className="experience__section">
           <h3 className="experience__subheader">Role</h3>
           <p className="experience__text">Business Development Manager</p>
+          <p className="experience__text">Stora Enso</p>
+          <p className="experience__text">2020 - 2021</p>
           <img src="" alt="" />
         </div>
         <div className="experience__section">
@@ -56,6 +60,8 @@ export default function ExperienceList() {
         <div className="experience__section">
           <h3 className="experience__subheader">Role</h3>
           <p className="experience__text">R&D Engineer</p>
+          <p className="experience__text">Stora Enso</p>
+          <p className="experience__text">2019 - 2020</p>
           <img src="" alt="" />
         </div>
         <div className="experience__section">

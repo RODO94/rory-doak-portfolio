@@ -12,8 +12,8 @@
 .projects {
   display: flex;
   padding: 0rem 6rem;
-  align-items: center;
-  height: 80vh;
+  align-items: flex-start;
+  gap: 4rem;
 
   &__technologies {
     display: flex;
@@ -23,7 +23,7 @@
     justify-content: space-between;
     align-items: flex-start;
     flex-shrink: 0;
-    align-self: stretch;
+    order: 2;
   }
   &__title {
     color: #000;
@@ -33,20 +33,19 @@
     line-height: normal;
     letter-spacing: 0.16rem;
     margin: 0;
+    padding-bottom: 1.5rem;
   }
   &__tech-wrap {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 0.625rem;
-    align-self: stretch;
   }
   &__tech-list {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     gap: 2rem;
-    align-self: stretch;
   }
   &__sections {
     display: flex;
@@ -54,6 +53,12 @@
     align-items: flex-start;
     gap: 1rem;
     align-self: stretch;
+  }
+  &__subheader {
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
   }
   &__subtitle {
     color: #fff;
@@ -78,7 +83,6 @@
     align-items: center;
     align-content: center;
     gap: 0.5rem;
-    align-self: stretch;
     flex-wrap: wrap;
   }
   &__tech {
@@ -104,11 +108,11 @@
     display: flex;
     padding: 0rem 0.25rem 0.25rem 0.125rem;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 0.625rem;
     flex: 1 0 0;
-    align-self: stretch;
+    order: 1;
   }
   &__wrap {
     display: flex;
@@ -172,6 +176,33 @@
       animation-name: sideFade;
       animation-duration: 1s;
       animation-delay: 24s;
+    }
+  }
+  &__button {
+    width: 3rem;
+    height: 3rem;
+    outline: none;
+    border: none;
+    color: #395fd3;
+    font-size: 1.5rem;
+    font-weight: 900;
+    display: inline;
+    border-radius: 50%;
+    text-align: center;
+    background-color: transparent;
+    &:hover {
+      cursor: pointer;
+      font-size: 2rem;
+    }
+    &--hide {
+      display: none;
+    }
+    &-wrap {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      gap: 4rem;
+      justify-content: center;
     }
   }
 }
