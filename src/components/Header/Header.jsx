@@ -6,8 +6,12 @@ export default function Header() {
   return (
     <header className="header">
       <nav className="header-nav">
-        <a className="header-nav__link">Projects</a>
-        <a className="header-nav__link">Experience</a>
+        <a className="header-nav__link" href="#projects">
+          Projects
+        </a>
+        <a className="header-nav__link" href="#experiences">
+          Experience
+        </a>
       </nav>
       <div className="header__contact">
         <a

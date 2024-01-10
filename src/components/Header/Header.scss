@@ -22,6 +22,11 @@
       font-style: normal;
       font-weight: 600;
       line-height: 2.5rem;
+      text-decoration: none;
+      color: black;
+      &:hover {
+        border-bottom: 2px solid #395fd3;
+      }
     }
   }
   &__contact {
@@ -43,6 +48,10 @@
       letter-spacing: 0.075rem;
       border-radius: 0.75rem;
       background: #e8fcb0;
+      text-decoration: none;
+      &:hover {
+        background: #d1f76b;
+      }
     }
   }
   &__icons {
