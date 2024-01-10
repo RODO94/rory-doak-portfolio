@@ -19,6 +19,8 @@
   gap: 1rem;
   @include desktop {
     flex-direction: row;
+    padding: 0rem 6rem;
+    gap: 2rem;
   }
 
   &__technologies {
@@ -75,6 +77,8 @@
     align-items: flex-start;
     gap: 1rem;
     align-self: stretch;
+    @include desktop {
+    }
   }
   &__subheader {
     font-size: 0.65rem;
@@ -93,6 +97,9 @@
     line-height: normal;
     letter-spacing: 0.08rem;
     margin: 0;
+    @include desktop {
+      font-size: 1rem;
+    }
     &-wrap {
       display: flex;
       padding: 0.5rem;
@@ -111,7 +118,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     @include desktop {
-      flex-direction: column;
+      flex-direction: row;
     }
   }
   &__tech {
@@ -145,7 +152,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 0.625rem;
+    gap: 1rem;
     flex: 1 0 0;
     align-self: stretch;
     order: 1;
