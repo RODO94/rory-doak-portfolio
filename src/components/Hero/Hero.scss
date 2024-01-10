@@ -1,3 +1,5 @@
+@use "../../styles/partials/mixins" as *;
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -18,12 +20,16 @@
     opacity: 100;
   }
 }
+
 .hero {
   display: flex;
-  padding: 0rem 6rem 3rem 6rem;
+  padding: 0rem 3rem 3rem 3rem;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  @include tablet {
+    padding: 0rem 6rem 3rem 6rem;
+  }
   &__wrap {
     display: flex;
     padding-top: 1rem;
@@ -35,12 +41,15 @@
   }
   &__title {
     margin: 0;
-    font-size: 5rem;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.32rem;
     color: #040e33;
+    @include tablet {
+      font-size: 5rem;
+    }
     &--emphasis {
       color: #395fd3;
     }
